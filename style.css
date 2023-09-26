@@ -1,0 +1,1114 @@
+:root {
+    /*how color*/
+    --color-blue: #3597ff; 
+    --grey-blue:#566b8d;
+
+    /*height*/
+    --height-nav: 5px;
+    --height-img: 15px;
+}
+
+/* General */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'SF Pro Display', sans-serif;   
+    letter-spacing: 1px;                              
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 50px;
+} 
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--grey-blue);
+    line-height: 1.5;
+    
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    padding: 15px 18px;
+}
+
+a.anchorText {
+    font-size: 1.125rem;
+    color: #3597ff;
+    padding: 0;
+    z-index: 2;
+} 
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 14px;
+}
+
+figure {
+    margin: 0;
+}
+
+.container {
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upperspace {
+    margin-top: 130px;
+}
+
+.positions {
+    position: relative;
+}
+
+.specialHead {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/*letter O on line*/
+figure.imgLetter {
+    position: absolute;
+    width: 241px;
+    overflow: hidden;
+    z-index: 0;
+
+    right: 0px;
+    top: 255px;
+}
+
+img.letterO {
+    max-height: 482px;
+}
+
+/*border line blue under sections*/
+.borderBlue {
+    border-bottom: 1px solid rgb(222, 226, 230);
+}
+
+/*labBox universal*/
+div.paddLab {
+    width: 55%;
+    height: 250px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+div.paddLab p {
+    font-size: 0.875rem;
+}
+
+div.paddTypes {
+    width: 100%;
+    height: 200px;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+div.labBox {
+    position: relative;
+}
+
+div.labBox:hover {
+    box-shadow: 0px 0px 25px 0px rgba(208,206,206,0.5);
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(208,206,206,0.5);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(208,206,206,0.5);
+}
+
+div.labBox div.vectorBox {
+    position: absolute;
+    bottom: 30px;
+} 
+
+div.labBox div.vectorOnBox {
+    display: none;
+}
+
+div.labBox:hover div.vectorOffBox {
+    display: none;
+}
+
+div.labBox:hover div.vectorOnBox {
+    display: block;
+}
+
+/* Header */
+/* Small header */
+header .small-head {
+    font-size: 13px;
+    color: #212529;
+
+    gap: 50px;  
+    padding: 9.5px 0px;
+    border-bottom: 1px solid #d7eaff;
+}
+
+header .small-head .discord-group a {
+    font-size: 12px;
+    color: #989ca2;
+    background-color: rgba(152, 156, 162, 0.15);
+    
+    padding: 6px 10px;
+    border: 1px solid rgba(152, 156, 162, 0.15);
+    border-radius: 5rem;
+}
+
+header .small-head .discord-group a:hover,
+header .small-head .discord-group a:active {
+    color: #000000;
+}
+
+header .small-head .discord-group a img {
+    margin-left: 5px;
+}
+
+/* Navigation */
+nav {
+    height: 80px;
+}
+
+nav div.navBox {
+    padding: 12px 0px;
+}
+
+nav a.logoBox {
+    padding-left: 0px;
+}
+
+nav img.logo {
+    vertical-align: middle;
+    margin-right: 1rem;
+    width: 120px;
+    height: 28px;
+}
+
+nav ul a:hover,
+nav ul a:active {
+    color: var(--color-blue);
+}
+
+/*navigation Openlab anchor*/
+nav ul li div a.resetOpenlab {
+    padding-right: 0;
+}
+
+nav ul li div a.resetBox {
+    padding-left: 10px;
+}
+
+nav ul li div a div.arrowBox {
+    margin-left: 0px;
+    margin-bottom: 7px;
+}
+
+nav ul li div a div span.arrow {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotate(45deg);
+}
+
+/*Dropdown list*/
+nav ul li div.dropDown-list {
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+    background: white;
+    border-radius: 6px;
+}
+
+nav ul li div.dropDown-list a {
+    display: block;
+    margin: 0px;
+    padding: 8px 50px;
+}
+
+nav ul li div.dropDown:hover div.dropDown-list{
+    display: block;
+}
+
+nav .btn {
+    font-family: inherit;
+    letter-spacing: inherit;
+    font-size: 14px;
+
+    background-color: var(--color-blue);
+    color: white;
+
+    padding: 15px 22px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 285px;
+}
+
+/* blue intro header */
+header .home {
+    position: relative;
+    background-color: var(--color-blue);
+    color: #ffffff;
+
+    height: 495px;
+}
+
+header div article.blueintroBox {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+header div article div.blueintro {
+    width: 41%;
+    padding: 3.3rem 13.5px;
+    margin-top: 3.17rem;
+    margin-bottom: 3.17rem;
+    margin-right: 90px;
+}
+
+header div article div.blueintro p{
+    color: white;
+}
+
+header div article div.imgLaptop {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    z-index: 1;
+}
+
+header div article div .peopleLaptop {
+    max-height: 470px;
+}
+
+/* Main */
+/*first section preco openlab?*/
+section article.why{
+    text-align: center;
+    max-width: 62rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section article.reasons {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section article div.reasonsBox {
+    width: 303px;
+    margin: 40px 14px;
+}
+
+section article div img {
+    max-width: 45px;
+    margin-top: var(--height-img);
+    margin-bottom: var(--height-img);
+}
+
+section article.reasons div p {
+    font-size: 0.875rem;
+}
+
+/*second section vision*/
+main section.visionBox {
+    justify-content: space-between;
+}
+
+section article.vision {
+    max-width: 36rem;
+}
+
+section article.numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    font-size: 90px;
+    font-weight: 600;
+}
+
+article.numbers div.colorcontent {
+    text-align: end;
+    margin: 9px;
+    padding: 16px 24px;
+    border-radius: 4px;
+}
+
+section article.numbers div p {
+    font-size: 1rem;
+    margin: 0;
+    color: inherit;
+}
+
+article.numbers .classes {
+    color: #5b94d7;
+    background-color: rgba(221, 236, 251, 0.4);
+}
+
+article.numbers .student {
+    color: #5cc19a;
+    background-color: rgba(156, 238, 204, 0.4);
+}
+
+article.numbers .labmaster {
+    color: #dbca68;
+    background-color: rgba(238, 226, 156, 0.4);
+}
+article.numbers .school {
+    color: #b95e73;
+    background-color: rgba(238, 156, 156, 0.4);
+}
+
+/*third sesction labs and study*/
+main section.gridLabBox {
+    display: grid;
+    grid-template-columns: 444px auto;
+}
+main section div.headerLabBox {
+    align-self: center;
+}
+
+main section div.threeLab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*forth section where schools*/
+div.twoSchool {
+    position: relative;
+}
+
+section h2.headerSchool {
+    text-align: center;
+}
+
+/*article*/
+section div.schoolGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 30rem);
+    column-gap: 130px;
+    justify-content: center;
+}
+
+article.schoolGridBox {
+    max-width: 29rem;
+}
+
+/*figure*/
+section div article figure img.schoolpicture {
+    max-width: 29rem;
+    margin-bottom: 20px;
+}
+
+section div article figure figcaption.schoolText {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section div article figure figcaption span {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #566b8d;
+}
+
+/*div.schoolTextBox*/
+div.schoolTextBox {
+    display: flex;
+    align-items: flex-end;
+}
+
+div.schoolTextBox h3 {
+    margin: 0;
+}
+
+div.warningInfo {
+    position: relative;
+}
+
+div.warningInfo img {
+    width: 15px;
+    margin: 0;
+}
+
+div.warningInfo p.warningText {
+    display: inline;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ff0000;
+}
+
+div.warningInfo p.warningHideText {
+    display: none;
+    position: absolute;
+    width: 600px;
+    max-height: 280px;
+    font-size: 14px;
+    padding: 15px;
+
+
+    bottom: 20px;
+    z-index: 3;
+    background: white;
+    border: 1px rgba(0, 0, 0, .2) solid;
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.24);
+}
+
+div.warningInfo:hover p.warningHideText {
+    display: block;
+}
+
+figure.letterLBox {
+    width: 213px;
+    position: absolute;
+    top: 275px;
+    right: 0;
+    overflow: hidden;
+}
+
+figure img.letterL {
+    width: 436px; 
+}
+
+/* section fifth openlab students*/
+section.openlabStudent {
+    background: #f3f9ff;
+}
+
+section div div.openlabStudentBox {
+    padding: 100px 0;
+}
+
+section div div.openlabStudentBox h2 span {
+    display: block;
+}
+
+section div article div.opinions {
+    position: relative;
+}
+
+section div article div svg.quotationMark {
+    position: absolute;
+}
+
+section div article p.opinionStudent {
+    width: 37%;
+    font-size: 1rem;
+    padding-top: 28px;
+    padding-left: 15px;
+}
+
+/*openlab students small info*/
+section div article div.extraInfo {
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    grid-template-columns: 35px 112px; 
+}
+
+section div article div.extraInfo p {
+    margin-bottom: 0; 
+}
+
+section div div.positions img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    max-width: 600px;
+}
+
+/*Pridajte sa k nam my vsetci sme openlab*/
+/*heading 2*/
+h2.myOpenlab {
+    text-align: center;
+}
+
+h2.myOpenlab span {
+    display: block;
+}
+
+/*article allTypes*/
+div.allTypes {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 80px;
+    justify-items: center;
+}
+
+div.allTypes article p {
+    font-size: 1rem;
+}
+
+/*article matchTypes*/
+    /*Labmastri v Openlabe*/
+div.matchTypes {
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+article.labmastriOpenlab {
+    position: relative;
+}
+
+article.labmastriOpenlab div.labmastriOpenlabBox {
+    background: #A54FA2;
+    color: white;
+    max-width: 520px;
+    padding: 40px 32px;
+    border-radius: 6px;
+    margin-left: 120px;
+}
+
+/* Text */
+hr.lineText {
+    color: white;
+    margin: 0;
+    width: 50px;
+}
+
+article.labmastriOpenlab div.labmastriOpenlabBox p {
+    color: inherit;
+    font-size: 1rem;
+}
+
+article.labmastriOpenlab div.labmastriOpenlabBox p span.biggerText {
+    font-size: 1.75rem;
+}
+
+article.labmastriOpenlab div.labmastriOpenlabBox p:nth-last-of-type(-n+2) {
+    margin-bottom: 0;
+}
+
+/* photoMaster */
+figure.photoMasterBox {
+    position: absolute;
+    top: 70px;
+    left: 300px;  
+    z-index: -5;
+
+    width: 70%;
+    height: 500px;
+}
+
+figure.photoMasterBox img.photoMaster {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+figure.cordinationLetterO {
+    position: absolute;
+    width: 275px;
+    overflow: hidden;
+    z-index: -9;
+
+    right: 0px;
+    top: 365px;
+}
+
+/* Sekcia: Pozrite si studentske projekty 
+        Header Students Projects */
+div.headerStudentProject {
+    margin: auto;
+    text-align: center;
+    max-width: 1000px;
+}
+
+
+/* Studentsky projekt Mapovanie z HybridLabu */
+article.mapping {
+    display: flex;
+    justify-content: center;
+    column-gap: 250px;
+
+    width: max-content;
+    margin: auto;
+    margin-top: 125px;
+    padding: 0 30px;
+    padding-bottom: 50px;
+}
+
+/* Mapping Text */
+article div.mappingText {
+    width: 415px;
+}
+
+p.specialBlack {
+    font-size: 1.125rem;
+    color: #000000;
+
+    margin-bottom: 30px;
+}
+
+h3.headerMapping {
+    font-size: 1.75rem;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+hr.lineMapping {
+    border: none;
+    height: 1px;
+    width: 50px;
+    margin-left: 0;
+
+    color: var(--grey-blue);
+    background-color: var(--grey-blue);
+}
+
+/* Mapping Picture */
+figure.mappingPictureBox {
+    height: 350px;
+}
+
+img.mappingPicture {
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* 
+    Cim sme vynimocny
+ */
+/*letter A on line*/
+figure.imgLetterA {
+    position: absolute;
+    bottom: 400px;
+    left: -241px;
+    z-index: -1;
+}
+
+.letterA {
+    height: 481px;
+    -webkit-clip-path: inset(0 0 0 50%); 
+    clip-path: inset(0 0 0 50%);
+
+}
+
+.specialGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 303px);
+    gap: 50px;
+    place-content: center;
+    width: max-content;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 0 140px;
+    padding-bottom: 50px;
+}
+
+/*
+    Sekcia: Spoznajte nas
+*/
+.knowUsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 303px);
+    gap: 20px;
+    place-content: center;
+    width: max-content;
+    margin: auto;
+}
+
+.knowUsPic {
+    height: 360px;
+    border-radius: 5px;
+}
+
+.knowUsText p:first-child {
+    font-size: 0.875rem;
+}
+
+.knowUsText h3 {
+    margin: 0;
+}
+
+/*
+    Sekcia: Podporte nas
+*/
+.supportFlex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    /* extra margin top*/
+    margin-top: 150px;
+}
+.supportMain {
+    max-width: 49%;
+}
+
+.supportMain p {
+    margin-bottom: 50px;
+}
+
+div.supportMain a {
+    padding: 0;
+    color: #3597ff;
+}
+.supportPic {
+    height: 25rem;
+}
+
+/*
+    Sekcia: Kto stoji za Openlabom
+*/
+.sponsorMain {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 200px;
+}
+
+.sponsorMain h2 {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.sponsorMain h2 span{
+    display: block;
+}
+
+/* div image part */
+.sponsorLogoMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 40px;
+}
+
+/*
+    Sekcia: Updates
+*/
+.update-flex {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    margin-bottom: 200px;
+}
+
+.img-wrapper {
+    position: relative;
+    height: 16.49vw;
+}
+
+.img-post {
+    height: 100%;
+}
+
+.img-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(60, 60, 60, 0.5);
+    opacity: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.img-content {
+    color: #fff;
+}
+
+.instagram-post {
+    padding-left: auto;
+}
+
+.img-wrapper:hover .img-overlay {
+    opacity: 1;
+}
+
+
+/*
+    Sekcia: Nie je moderná škola ako moderná škola
+*/
+.modern-school-box {
+    display: flex;
+    gap: 170px;
+}
+
+.modern-school h2 {
+    margin-bottom: 20px;
+}
+
+.modern-school h2 span {
+    display: block;
+}
+
+.modern-school p {
+    width: 500px;
+}
+
+/* icon part */
+.icon-box {
+    display: flex;
+    margin-top: 40px;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.youtube-icon {
+    background-image: url(images/social-icon/youtube-color.svg);
+}
+
+.spotify-icon {
+    background-image: url(images/social-icon/spotify.svg);
+}
+
+.podcast-icon {
+    background-image: url(images/social-icon/podcast.svg);
+}
+
+.google-icon {
+    background-image: url(images/social-icon/google.svg);
+}
+
+/* blue button with anchor*/
+.blue-button {
+    margin-top: 50px;
+}
+
+.blue-button a {
+    background-color: #3597ff;
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px 50px;
+    border-radius:  6px;
+}
+
+/* modern school picture */
+.modern-school-image {
+    max-height: 360px;
+}
+
+/*
+    Sekcia: Ďakujeme za podporu v roku 2022!
+*/
+section.thank-partner{
+    margin-top: 210px;
+}
+
+section.thank-partner h2 {
+    text-align: center;
+}
+
+.partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* first partners*/
+.partner-first {
+    gap: 70px;
+}
+
+.partner-one {
+    max-height: 75px;
+}
+.partner-two {
+    max-height: 65px;
+}
+.partner-three {
+    max-height: 100px;
+}
+.partner-four {
+    max-height: 62px;
+}
+.partner-five {
+    max-height: 75px;
+}
+.partner-six {
+    max-height: 105px;
+}
+
+/*second partners*/
+.partner-second {
+    gap: 250px;
+}
+
+.partner-second-one {
+    max-height: 85px;
+}
+.partner-second-two {
+    max-height: 55px;
+}
+.partner-second-three {
+    max-height: 65px;
+}
+
+/*
+    Sekcia: Prihláste sa do nášho newslettra
+*/
+section.news-letter {
+    background: #d7eaff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+
+    border-radius: 6px;
+    padding: 50px 0px;
+}
+
+section.news-letter h3 span {
+    display: block;
+}
+
+/* Email Form*/
+.email-form-box form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.email-form-box form {
+    position: relative;
+}
+
+.email-form {
+    font-family: inherit;
+    letter-spacing: 1px;
+
+    border: none;
+    outline: none;
+
+    padding: 10px 20px;
+    padding-right: 70px;
+    border-radius: 6px;
+}
+
+div.email-form-box input[type="email"] {
+    width: 480px;
+}
+
+button.email-button {
+    position: absolute;
+    right: 25px;
+
+    cursor: pointer;
+
+    background: url(images/send.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+
+    border: none;
+
+    width: 1rem;
+    height: 1rem;
+}
+
+/*
+    Sekcia: Footer
+*/
+.openlab-footer {
+    max-width: 1650px;
+    margin-right: auto;
+    margin-left: auto;
+
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+footer * {
+    font-size: 13px;
+    color: var(--grey-blue);
+}
+
+.information {
+    display: flex;
+    align-items: last baseline;
+    gap: 50px;
+
+    padding: 0px 10px;
+}
+
+/* Information about address */
+.info-address p span {
+    display: block;
+}
+
+/* Information about mail */
+.info-mail {
+    text-decoration: underline;
+}
+
+/* Information about socials */
+.info-social {
+    margin-left: auto;
+}
+
+.info-social ul {
+    display: flex;
+}
+
+.info-social ul li a img {
+    max-height: 20px;
+}
+
+/* yellow square footer */
+figure.yellow-square-box {
+    position: absolute;
+    left: 90%;
+    top: 150px;
+}
